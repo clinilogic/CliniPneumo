@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.netlify.clinipneumo.twa",
+        "sha256_cert_fingerprints": ["E1:94:5D:3F:99:31:16:15:B9:0D:43:EB:CD:0D:F8:EA:0A:94:91:56:F1:E8:D8:76:2A:69:BD:2B:4E:6C:F9:87"]
+      }
+    }]
