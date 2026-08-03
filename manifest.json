@@ -1,26 +1,118 @@
 {
+  "id": "/?source=pwa",
   "name": "CliniPneumo",
   "short_name": "CliniPneumo",
   "description": "Outil d'aide à la décision clinique en pneumologie et médecine d'urgence",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "/index.html",
+  "scope": "/",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
   "orientation": "portrait-primary",
   "background_color": "#f0f4f8",
   "theme_color": "#1a365d",
   "lang": "fr",
+  "dir": "ltr",
+  "categories": [
+    "medical",
+    "health",
+    "education"
+  ],
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-accueil.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Écran d'accueil — accès par thème"
+    },
+    {
+      "src": "/screenshot-urgence.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Conduites à tenir en urgence"
+    },
+    {
+      "src": "/screenshot-calculateur.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Calculateurs et scores cliniques"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Urgence vitale",
+      "short_name": "Urgence",
+      "description": "Conduites à tenir devant une détresse vitale",
+      "url": "/index.html#urgence",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Recherche",
+      "short_name": "Recherche",
+      "description": "Rechercher dans tous les modules",
+      "url": "/index.html#recherche",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Question du jour",
+      "short_name": "Question",
+      "description": "Une question de la banque de quiz",
+      "url": "/index.html#apprendre",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }
