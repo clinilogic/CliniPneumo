@@ -140,27 +140,3 @@ self.addEventListener('message', function (event) {
     if (event.ports && event.ports[0]) event.ports[0].postMessage(VERSION);
   }
 });
-
-// Récupération : cache d'abord, réseau en secours (et mise à jour du cache si réseau disponible)
-self.addEventListener('fetch', function(event) {
-  // ne pas intercepter les requêtes vers des domaines externes (CDN OCR, etc.)
-  if (event.request.method !== 'GET' || !event.request.url.startsWith(self.location.origin)) {
-    return;
-  }
-  event.respondWith(
-    caches.match(event.request).then(function(cachedResponse) {
-      const networkFetch = fetch(event.request).then(function(networkResponse) {
-        if (networkResponse && networkResponse.status === 200) {
-          const responseClone = networkResponse.clone();
-          caches.open(CACHE_VERSION).then(function(cache) {
-            cache.put(event.request, responseClone);
-          });
-        }
-        return networkResponse;
-      }).catch(function() {
-        return cachedResponse;
-      });
-      return cachedResponse || networkFetch;
-    })
-  );
-});
