@@ -54,65 +54,27 @@
       "purpose": "maskable"
     }
   ],
-  "screenshots": [
-    {
-      "src": "/screenshot-accueil.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Écran d'accueil — accès par thème"
-    },
-    {
-      "src": "/screenshot-urgence.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Conduites à tenir en urgence"
-    },
-    {
-      "src": "/screenshot-calculateur.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Calculateurs et scores cliniques"
-    }
-  ],
   "shortcuts": [
     {
       "name": "Urgence vitale",
       "short_name": "Urgence",
       "description": "Conduites à tenir devant une détresse vitale",
       "url": "/index.html#urgence",
-      "icons": [
-        {
-          "src": "/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Recherche",
       "short_name": "Recherche",
       "description": "Rechercher dans tous les modules",
       "url": "/index.html#recherche",
-      "icons": [
-        {
-          "src": "/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Question du jour",
       "short_name": "Question",
       "description": "Une question de la banque de quiz",
       "url": "/index.html#apprendre",
-      "icons": [
-        {
-          "src": "/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

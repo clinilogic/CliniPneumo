@@ -15,7 +15,7 @@
  * Déploiement : incrémenter VERSION ci-dessous ET dans version.json.
  * --------------------------------------------------------------- */
 
-const VERSION      = '0.9.1';
+const VERSION      = '0.9.7';
 const CACHE_APP    = 'clinipneumo-app-' + VERSION;
 const CACHE_STATIC = 'clinipneumo-static-' + VERSION;
 
